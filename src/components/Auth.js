@@ -5,7 +5,7 @@ const Auth = () => {
   return (
     <div>
       <Row style={{justifyContent: 'center'}}>
-        <Col lg={5} md={5} sm={12}>
+        <Col lg={5} md={7} sm={12}>
           <Card style={glassCard} align="center" className="py-4">
             <Card.Body>
               <Image src={collaboLogo} style={{width: '150px', alignSelf:'center'}}/>
@@ -13,12 +13,12 @@ const Auth = () => {
               <Col lg={11}>
                 <Form className="pt-4">
                   <Form.Group>
-                    <Form.Control size="lg" type="email" placeholder="Enter email" />
+                    <Form.Control size="lg" type="email" placeholder="Enter email" style={glassForm} />
                   </Form.Group>
                   <Form.Group controlId="formBasicPassword">
-                    <Form.Control size="lg" type="password" placeholder="Password" />
+                    <Form.Control size="lg" type="password" placeholder="Password" style={glassForm} />
                   </Form.Group>
-                  <Button variant="teal" size="lg" type="submit" className="mt-3">Submit</Button>
+                  <Button variant="teal" size="lg" type="submit" className="mt-3" style={{borderRadius:'15px'}}>Submit</Button>
                 </Form>
               </Col>
             </Card.Body>
@@ -32,6 +32,13 @@ const Auth = () => {
 const glassCard = {
   marginTop: '200px',
   borderRadius:'35px',
+  backgroundColor:'rgba(247, 247, 247, 0.5)',
+  backdropFilter: 'blur(6px)',
+  borderColor: 'transparent'
+}
+
+const glassForm = {
+  borderRadius:'15px',
   backgroundColor:'rgba(247, 247, 247, 0.5)',
   backdropFilter: 'blur(6px)',
   borderColor: 'transparent'
