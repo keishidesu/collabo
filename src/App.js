@@ -1,19 +1,20 @@
+import { Container } from 'react-bootstrap';
+import Auth from './components/Auth'
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <style type="text/css">
+        {`
+        .btn-teal {
+          background-color: #00C2CB;
+          color: white;
+        }
+        `}
+      </style>
+      <Container>
+        <Auth />
+      </Container>
     </div>
   );
 }
