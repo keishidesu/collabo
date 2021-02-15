@@ -84,7 +84,10 @@ export default function Home() {
           </Col>
         </Row>
         <hr />
-        <Row className="mt-4 mb-4 justify-content-center">
+        <Row className="mt-4 mb-4">
+          <Col>
+            <a style={navlist} href="/">Dashboard</a>
+          </Col>
           <Col>
             <a style={navlist} href="/">Task List</a>
           </Col>

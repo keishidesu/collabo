@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar } from 'react-bootstrap';
+import { Navbar, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import logo from './Collabo.png'
 
 export const NavBar = () => {
@@ -15,6 +15,13 @@ export const NavBar = () => {
         />{' '}
         Collabo
       </Navbar.Brand>
+      <Navbar.Collapse className="justify-content-end">
+        <OverlayTrigger placement="bottom" overlay={<Tooltip id="signout">Signout?</Tooltip>}>
+          <Navbar.Text>
+            Signed in as: <a href="/auth">Andrew Otto</a>
+          </Navbar.Text>
+        </OverlayTrigger>
+      </Navbar.Collapse>
     </Navbar>
   );
 }
