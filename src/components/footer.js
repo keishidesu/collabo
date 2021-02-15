@@ -25,7 +25,7 @@ export default function Footer() {
         <a style={navlist} href="/documents">Documents</a>
         </Col>
       </Row>
-      <hr />
+      <br />
     </div>
   );
 }

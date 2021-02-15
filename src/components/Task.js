@@ -10,7 +10,7 @@ export default function Task(){
       <Container>
         <Card className="mt-4">
           <Card.Text>
-            <Tab.Container id="list-group-tabs-example" defaultActiveKey="#task1">
+            <Tab.Container id="task-group" defaultActiveKey="#task1">
               <Row>
                 <Col sm={4}>
                   <ListGroup>
@@ -28,8 +28,8 @@ export default function Task(){
                     </ListGroup.Item>
                   </ListGroup>
                 </Col>
-                <Col sm={8} className="p-2">
-                  <Tab.Content>
+                <Col sm={8}>
+                  <Tab.Content className="p-4">
                     <Tab.Pane eventKey="#task1">
                       <h3>Task Description</h3>
                       <small className="text-muted">Due Date: 28 February 2021</small>
