@@ -1,22 +1,23 @@
-import { Container } from 'react-bootstrap';
-import Auth from './components/Auth'
 
-function App() {
+import Auth from './components/Auth';
+import Home from './components/home';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+
+export default function App() {
   return (
-    <div>
-      <style type="text/css">
-        {`
-        .btn-teal {
-          background-color: #00C2CB;
-          color: white;
-        }
-        `}
-      </style>
-      <Container>
-        <Auth />
-      </Container>
-    </div>
+    <Router>
+      <div>
+        <Switch>
+          <Route path="/home">
+            <Home />
+          </Route>
+          <Route path="/">
+            <Auth />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
-
-export default App;
