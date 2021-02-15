@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div>
       <hr />
-      <Row className="mt-4 mb-4">
+      <Row>
         <Col>
           <a style={navlist} href="/home">Home</a>
         </Col>
@@ -25,6 +25,7 @@ export default function Footer() {
         <a style={navlist} href="/documents">Documents</a>
         </Col>
       </Row>
+      <hr />
     </div>
   );
 }
