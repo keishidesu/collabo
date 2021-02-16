@@ -5,6 +5,7 @@ import Task from './components/Task';
 import Schedule from './components/Schedule';
 import Dashboard from './components/dashboard';
 import Document from './components/document';
+import Messages from './components/message';
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -27,6 +28,9 @@ export default function App() {
         </Route>
         <Route path="/documents">
           <Document />
+        </Route>
+        <Route path="/message">
+          <Messages />
         </Route>
         <Route path="/">
           <Auth />
