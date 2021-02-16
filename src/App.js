@@ -4,6 +4,7 @@ import Home from './components/home';
 import Task from './components/Task';
 import Schedule from './components/Schedule';
 import Dashboard from './components/dashboard';
+import Document from './components/document';
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -23,6 +24,9 @@ export default function App() {
         </Route>
         <Route path="/dashboard">
           <Dashboard />
+        </Route>
+        <Route path="/documents">
+          <Document />
         </Route>
         <Route path="/">
           <Auth />

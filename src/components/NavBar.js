@@ -18,7 +18,7 @@ export const NavBar = () => {
       <Navbar.Collapse className="justify-content-end">
         <OverlayTrigger placement="bottom" overlay={<Tooltip id="signout">Signout?</Tooltip>}>
           <Navbar.Text>
-            Signed in as: <a href="/auth">Andrew Otto</a>
+            Signed in as: <a href="/">Andrew Otto</a>
           </Navbar.Text>
         </OverlayTrigger>
       </Navbar.Collapse>

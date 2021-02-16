@@ -32,7 +32,7 @@ export default class Dashboard extends React.Component {
         {
           title: 'My Documents',
           image: document,
-          link: '/document'
+          link: '/documents'
         }
       ]
     }
