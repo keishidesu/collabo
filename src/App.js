@@ -6,6 +6,7 @@ import Schedule from './components/Schedule';
 import Dashboard from './components/dashboard';
 import Document from './components/document';
 import Messages from './components/message';
+import Footer from './components/footer';
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -36,6 +37,7 @@ export default function App() {
           <Auth />
         </Route>
       </Switch>
+      <Footer />
     </Router>
   );
 }

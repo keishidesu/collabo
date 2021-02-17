@@ -35,11 +35,11 @@ export default function Messages(){
   return (
     <div>
       <NavBar />
-      <div style={{
+      <Container style={{
         height: "600px",
         position: "relative"
         }}>
-        <MainContainer responsive>                                   
+        <MainContainer responsive className='p-3 mt-4'>                                   
           <Sidebar position="left" scrollable={false}>
             <Search placeholder="Search..." />
             <ConversationList>        
@@ -176,7 +176,7 @@ export default function Messages(){
               </ExpansionPanel>
             </Sidebar>            
         </MainContainer>
-      </div>
+      </Container>
       <Container>
         <Footer />
       </Container>

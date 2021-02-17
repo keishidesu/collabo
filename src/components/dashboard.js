@@ -45,7 +45,7 @@ export default class Dashboard extends React.Component {
       cards.push(
         <Col xs={12} md={3} key={index}>
           <Link to={value.link} className="text-decoration-none">
-            <Card className="p-3">
+            <Card className="p-3" style={glassCard}>
               <Card.Img className="d-none d-md-block" align="center" as={Image} src={value.image} fluid/>
                 <Card.Title className="text-center">
                   {value.title}
@@ -82,4 +82,11 @@ export default class Dashboard extends React.Component {
       </div>
     );
   }
+}
+
+const glassCard = {
+  borderRadius:'35px',
+  backgroundColor:'rgba(247, 247, 247, 0.5)',
+  backdropFilter: 'blur(6px)',
+  borderColor: 'transparent'
 }
