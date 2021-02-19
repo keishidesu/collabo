@@ -38,7 +38,7 @@ export default function Document(){
                   <DocViewer pluginRenderers={[PDFRenderer]} documents={doc1} />
                 </Tab.Pane>
                 <Tab.Pane eventKey="#doc2">
-                <DocViewer pluginRenderers={[PDFRenderer]} documents={doc2} />
+                  <DocViewer pluginRenderers={[PDFRenderer]} documents={doc2} />
                 </Tab.Pane>
               </Tab.Content>
             </Col>

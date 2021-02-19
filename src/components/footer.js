@@ -2,7 +2,7 @@ import { Nav } from 'react-bootstrap';
 
 export default function Footer() {
   return (
-  <div style={footer}>
+  <div style={footer} className="d-none d-md-block">
     <hr />
     <Nav className="justify-content-center" activeKey="/home">
       <Nav.Item>

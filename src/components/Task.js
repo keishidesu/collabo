@@ -8,9 +8,9 @@ export default function Task(){
     <div>
       <NavBar />
       <Container>
-        <Tabs className="mt-4" defaultActiveKey="todo" transition={false} id="task-tab">
+        <Tabs className="mt-4" defaultActiveKey="todo" transition={false} id="task-tab" style={{'background': 'rgba(255, 255, 255, 0.7)'}}>
           <Tab eventKey="todo" title="To Do List">
-            <Card>
+            <Card style={{'background': 'rgba(255, 255, 255, 0.7)'}}>
               <Card.Text>
                 <Tab.Container id="task-group" defaultActiveKey="#task1">
                   <Row>
@@ -82,7 +82,7 @@ export default function Task(){
             </Card>
           </Tab>
           <Tab eventKey="completed" title="Completed">
-          <Card>
+          <Card style={{'background': 'rgba(255, 255, 255, 0.7)'}}>
               <Card.Text>
                 <Tab.Container id="task-group" defaultActiveKey="#task5">
                   <Row>

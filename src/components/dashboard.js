@@ -7,6 +7,7 @@ import task from '../assets/task.png';
 import schedule from '../assets/schedule.png';
 import message from '../assets/message.png';
 import document from '../assets/document.png';
+import Footer from './footer';
 
 export default class Dashboard extends React.Component {
 
@@ -45,9 +46,9 @@ export default class Dashboard extends React.Component {
       cards.push(
         <Col xs={12} md={3} key={index}>
           <Link to={value.link} className="text-decoration-none">
-            <Card className="p-3" style={glassCard}>
-              <Card.Img className="d-none d-md-block" align="center" as={Image} src={value.image} fluid/>
-                <Card.Title className="text-center">
+            <Card className="p-3 my-3" style={glassCard}>
+              <Card.Img className="d-none d-md-block mt-3" as={Image} src={value.image} style={{width: '150px', alignSelf: 'center' }} fluid/>
+                <Card.Title className="text-center mt-2 text-dark">
                   {value.title}
                 </Card.Title>
             </Card>
@@ -78,6 +79,7 @@ export default class Dashboard extends React.Component {
           <Row>
             {cards}
           </Row>
+          <Footer />
         </Container>
       </div>
     );

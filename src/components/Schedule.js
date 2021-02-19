@@ -79,6 +79,7 @@ export default class Schedule extends React.Component {
             </Col>
           </Row>
         </Container>
+        <Footer />
       </div>    
     )
   }
